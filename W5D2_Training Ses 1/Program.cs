@@ -14,7 +14,12 @@ namespace W5D2_Training_Ses_1
         {
             ///Thread thread_name = n
             Console.WriteLine("Calling sleep task method");
-            sleepTask();
+            Thread thread_name = new Thread(new ThreadStart(sleepTask));  //line 16 and 17 makes the thread asynchronous
+            thread_name.Start();
+            thread_name.Join(); // line 19 makes the thread synchronous
+
+
+            //sleepTask();
             Console.WriteLine("calling do something method");
             dosomething();
             Console.WriteLine("done with main program");
