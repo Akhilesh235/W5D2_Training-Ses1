@@ -12,7 +12,7 @@ namespace W5D2_Training_Ses_1
     {
         static void Main(string[] args)
         {
-            //Thread thread_name = n
+            ///Thread thread_name = n
             Console.WriteLine("Calling sleep task method");
             sleepTask();
             Console.WriteLine("calling do something method");
